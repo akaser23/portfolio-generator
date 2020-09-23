@@ -22,7 +22,7 @@ const writeFile = fileContent => {
 
 const copyFile = writeFileResponse => {
     return new Promise((resolve,reject) => {
-        fs.copyFile('./', writeFileResponse, err => {
+        fs.copyFile('./dist/index.html' , './utils/copied_file.txt', writeFileResponse, err => {
             if (err) {
                 reject(err);
                 return;

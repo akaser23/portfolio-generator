@@ -143,7 +143,7 @@ promptUser()
     })
     .then(writeFileResponse => {
         console.log(writeFileResponse);
-        return copyFile();
+        return copyFile(writeFileResponse);
     })
     .then(copyFileResponse => {
         console.log(copyFileResponse);
